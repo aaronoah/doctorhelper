@@ -1,0 +1,4 @@
+# If you change the database schema, you must increment the database version.
+DATABASE_VERSION=1
+DATABASE_NAME="DoctorHelper.db"
+

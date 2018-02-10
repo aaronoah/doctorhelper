@@ -1,0 +1,81 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+
+repositories {
+    jcenter()
+    flatDir {
+        dirs 'prebuilt-libs'
+    }
+}
+
+android {
+    compileSdkVersion "Google Inc.:Glass Development Kit Preview:19"
+    buildToolsVersion "21.1.2"
+
+    defaultConfig {
+        applicationId "edu.sabien.aaronzhao.doctorhelper"
+        minSdkVersion 19
+        targetSdkVersion 19
+        versionCode 1
+        versionName "1.0"
+        // Enabling multidex support.
+        multiDexEnabled true
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+        }
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        disable 'InvalidPackage'
+    }
+}
+
+dependencies {
+
+    apt 'com.google.dagger:dagger-compiler:2.2'
+    compile 'com.google.dagger:dagger:2.2'
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    //provided 'javax.annotation:jsr250-api:1.0'
+    //provided 'org.glassfish:javax.annotation:10.0-b28'
+    provided 'org.glassfish:javax.annotation:10.0-b28'
+    compile 'com.jakewharton:butterknife:8.0.1'
+    apt 'com.jakewharton:butterknife-compiler:8.0.1'
+    compile 'com.android.support:support-v4:23.3.0'
+    //socket.io for socket libraries
+    //parsing json objects and files
+    //compile ('com.googlecode.json-simple:json-simple:1.1.1'){
+    //    exclude group: 'org.hamcrest', module: 'hamcrest-core'
+    //}
+    compile 'com.squareup.okhttp3:okhttp:3.2.0' //square open source pack: okhttp + retrofit
+    compile 'com.squareup.retrofit2:retrofit:2.0.1'
+    compile 'com.google.code.gson:gson:2.4'
+
+    // App's dependencies, including test
+    //compile 'com.android.support:support-annotations:23.2.1'
+    //androidTestCompile 'com.android.support:support-annotations:22.+'
+    androidTestCompile 'com.android.support.test:runner:0.5'
+    androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2.2'
+
+}
+
+configurations.all {
+    resolutionStrategy {
+        force 'com.android.support:support-annotations:23.3.0'
+    }
+}
+
+

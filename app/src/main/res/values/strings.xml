@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">DoctorHelper</string>
+    <string name="open_offline_msg_view">Local Data Panel</string>
+    <string name="open_online_msg_view">Online Data Panel</string>
+    <string name="action_goto_settings">To Wifi settings</string>
+
+    <string name="wifiNotConnected">You need WIFI connection for service</string>
+    <string name="wifiNotConnectedFootnote">Tap to view Connectivity status</string>
+    <string name="wifiSignalOn">Wifi connected</string>
+    <string name="wifiSignalOff">Wifi disconnected</string>
+    <string name="wifiInaccessible">Wifi inaccessible</string>
+    <string name="wifiInaccessibleFootnote">Your wifi connection does not work</string>
+
+    <string name="loading">Loading</string>
+    <string name="choreographer">Choreographer</string>
+
+    <string name="chNotConnected">Need Ch connection to receive updates</string>
+    <string name="chNotConnectedFootnote">Trust any Chs they will automatically connect</string>
+    <string name="chOn">Choreographer | on</string>
+    <string name="chOff">Choreographer | off</string>
+
+    <string name="connectionSet">Wifi and Cgh connected</string>
+    <string name="connectionSetFootnote">Tap, launch message board, swipe down, dismiss</string>
+    <string name="connectionLost">Wifi or cgh connection lost</string>
+    <string name="connectionLostFootnote">Tap to direct back to Main panel</string>
+</resources>

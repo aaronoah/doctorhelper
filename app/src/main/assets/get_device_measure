@@ -1,0 +1,18 @@
+{
+  "IdMensaje":"UUIDToBeReplaced",
+  "sender":"Google.android.glass",
+  "receiver":"RecvToBeReplaced",
+  "protocolo":0,
+  "Credential":null,
+  "lenguaje":"XMSG-SOAP",
+  "enrespuestaa":"",
+  "Contenido":{
+    "metodo":"getMeasure",
+    "parametros":{
+      "txt":{
+        "type":"xs:string",
+        "value":"SessionToBeReplaced"
+      }
+    }
+  }
+}

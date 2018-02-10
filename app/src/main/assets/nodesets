@@ -1,0 +1,11 @@
+{
+  "id": 1,
+  "author": "Aaron Zhao",
+  "_comment": "single set of work group, choreographer and google glass",
+  "choreographer":
+  {
+    "id": "1",
+    "ip": "158.42.166.132",
+    "port": "1515"
+  }
+}

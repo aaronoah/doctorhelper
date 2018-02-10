@@ -1,0 +1,26 @@
+{
+  "id": 1,
+  "name": "message_filter",
+  "filters":[
+    {
+      "type": "message_in_filter",
+      "_comment": "defines which kind of messages are allowed to be received"
+    },
+    {
+      "type":"message_out_filter",
+      "_comment": "defines which kind of messages are allowed to be sent",
+      "file_paths":[
+        {
+          "_comment": "pull request path declaration",
+          "name": "pull",
+          "path": "msg/pull.json"
+        },
+        {
+          "_comment": "REST api notification declaration",
+          "name": "rest",
+          "path": "msg/rest.json"
+        }
+      ]
+    }
+  ]
+}

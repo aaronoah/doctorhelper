@@ -1,0 +1,25 @@
+{
+  "id": 1,
+  "name": "pull_data_structures",
+  "_comment": "defines several data structures for pulling data",
+  "data_structures":[
+    {
+      "IdMensaje": "43d33023a68c4048a4f331a575532192",
+      "sender": "DoctorHelper",
+      "receiver": "Test.Echo",
+      "protocolo": 0,
+      "Credential": null,
+      "lenguaje": "XMSG-SOAP",
+      "enrespuestaa": "",
+      "Contenido": {
+        "metodo": "Echo",
+        "parametros": {
+          "txt": {
+            "type": "xs:string",
+            "value": "Hello Service and User Control"
+          }
+        }
+      }
+    }
+  ]
+}

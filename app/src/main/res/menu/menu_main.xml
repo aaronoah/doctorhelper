@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/open_msg_view"
+        android:icon="@drawable/ic_glass_logo"
+        android:title="@string/open_offline_msg_view"/>
+    <item
+        android:id="@+id/action_goto_settings"
+        android:icon="@drawable/ic_wifi_tethering"
+        android:title="@string/action_goto_settings" />
+</menu>
